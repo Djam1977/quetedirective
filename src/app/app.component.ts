@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'quete.angule.directive';
+  title = 'Bonjour';
+  isAdmin: boolean = true;
+  buttonclick(){
+    if (this.isAdmin === true) {
+      this.isAdmin = false;
+    }
+    else{this.isAdmin = true;}
+
+  }
 }
